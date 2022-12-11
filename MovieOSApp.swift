@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MovieOSApp: App {
+    @StateObject private var manager = Manager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(manager)
+                .environment(\.managedObjectContext, manager.container.viewContext)
         }
     }
 }
