@@ -6,22 +6,12 @@
 //
 
 import Foundation
-import CoreData
 
 class Manager: ObservableObject {
-    let container = NSPersistentContainer(name: "MovieModel")
     
     @Published var movieItems = [MovieItem]()
     @Published var movies = [Movie]()
-    
-    init() {
-        container.loadPersistentStores { description, error in
-            if error != nil {
-                Log.error("Cannot load persistent stores")
-            }
-        }
-        container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
-    }
+
     
     // MARK: - Fetch Movies IDs
     func fetchMovieIDs() {
@@ -29,8 +19,7 @@ class Manager: ObservableObject {
             switch result {
             case .success(let success):
                 DispatchQueue.main.async { [unowned self] in
-                    self.movieItems.append(contentsOf: success.results)
-                    print(self.movieItems)
+                    self.movieItems = success.results
                 }
             case .failure(let failure):
                 print(failure)
@@ -41,14 +30,28 @@ class Manager: ObservableObject {
     
     // MARK: - Fetch Movie
     func fetchMovie(id: String) {
-        NetworkEngine.request(endpoint: MovieEndpoint.fetchMovieInfo(movieID: id)) { (result: Result<Movie, Error>) in
+        
+        guard doesNotContainMovie(id: id) else { return }
+        
+        NetworkEngine.request(endpoint: MovieEndpoint.fetchMovieInfo(movieID: id)) { [unowned self] (result: Result<Movie, Error>) in
             switch result {
             case .success(let success):
-                print(success)
+                DispatchQueue.main.async { [unowned self] in
+                    self.movies.append(success)
+                    print(movies.count)
+                }
             case .failure(let failure):
                 print(failure)
             }
         }
     }
     
+    func doesNotContainMovie(id: String) -> Bool {
+        for movie in movies {
+            if "\(movie.id)" == id {
+                return false
+            }
+        }
+        return true
+    }
 }

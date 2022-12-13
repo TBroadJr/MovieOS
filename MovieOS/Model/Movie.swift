@@ -7,11 +7,12 @@
 
 import Foundation
 
-struct Movie: Codable {
+struct Movie: Codable, Identifiable {
+    let id: Int
     let title: String
     let budget: Double
     let genres: [Genre]
-    let homepage: URL
+    let homepage: String
     let overview: String
     let productionCompanies: [Company]
     let releaseDate: String
@@ -23,7 +24,7 @@ struct Movie: Codable {
     let posterPath: String
     
     enum CodingKeys: String, CodingKey {
-        case title, budget, genres, homepage, overview, revenue, runtime, tagline
+        case title, budget, genres, homepage, overview, revenue, runtime, tagline, id
         case productionCompanies = "production_companies"
         case releaseDate = "release_date"
         case rating = "vote_average"

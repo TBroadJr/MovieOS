@@ -8,33 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		F6B8AF4A2944F23200DFC71C /* MovieOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF492944F23200DFC71C /* MovieOSApp.swift */; };
-		F6B8AF4C2944F23200DFC71C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF4B2944F23200DFC71C /* ContentView.swift */; };
+		F6B8AF4C2944F23200DFC71C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF4B2944F23200DFC71C /* HomeView.swift */; };
 		F6B8AF4E2944F23500DFC71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B8AF4D2944F23500DFC71C /* Assets.xcassets */; };
 		F6B8AF512944F23500DFC71C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B8AF502944F23500DFC71C /* Preview Assets.xcassets */; };
 		F6B8AF5F2944F7DB00DFC71C /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF5E2944F7DB00DFC71C /* Manager.swift */; };
-		F6B8AF622944F80A00DFC71C /* MovieModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF602944F80A00DFC71C /* MovieModel.xcdatamodeld */; };
 		F6B8AF652944F98200DFC71C /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF642944F98200DFC71C /* Log.swift */; };
 		F6B8AF682945007600DFC71C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF672945007600DFC71C /* Endpoint.swift */; };
 		F6B8AF6A294500E200DFC71C /* MovieEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF69294500E200DFC71C /* MovieEndpoint.swift */; };
 		F6B8AF6C294631DC00DFC71C /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF6B294631DC00DFC71C /* NetworkEngine.swift */; };
 		F6B8AF722946361D00DFC71C /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF712946361D00DFC71C /* Movies.swift */; };
 		F6B8AF742946410F00DFC71C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF732946410F00DFC71C /* Movie.swift */; };
+		F6B8AF7929477CAF00DFC71C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF7829477CAF00DFC71C /* ImageLoader.swift */; };
+		F6B8AF7D2947B59C00DFC71C /* MovieDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF7C2947B59C00DFC71C /* MovieDetailScreen.swift */; };
+		F6B8AF822948B5CB00DFC71C /* XMarkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8AF812948B5CB00DFC71C /* XMarkImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6B8AF462944F23200DFC71C /* MovieOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B8AF492944F23200DFC71C /* MovieOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieOSApp.swift; sourceTree = "<group>"; };
-		F6B8AF4B2944F23200DFC71C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6B8AF4B2944F23200DFC71C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F6B8AF4D2944F23500DFC71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6B8AF502944F23500DFC71C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6B8AF5E2944F7DB00DFC71C /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		F6B8AF612944F80A00DFC71C /* MovieModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieModel.xcdatamodel; sourceTree = "<group>"; };
 		F6B8AF642944F98200DFC71C /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		F6B8AF672945007600DFC71C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		F6B8AF69294500E200DFC71C /* MovieEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndpoint.swift; sourceTree = "<group>"; };
 		F6B8AF6B294631DC00DFC71C /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 		F6B8AF712946361D00DFC71C /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		F6B8AF732946410F00DFC71C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F6B8AF7829477CAF00DFC71C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F6B8AF7C2947B59C00DFC71C /* MovieDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailScreen.swift; sourceTree = "<group>"; };
+		F6B8AF812948B5CB00DFC71C /* XMarkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +77,9 @@
 				F6B8AF5D2944F7C800DFC71C /* Manager */,
 				F6B8AF6E294635C200DFC71C /* Model */,
 				F6B8AF6D294635B500DFC71C /* Views */,
+				F6B8AF7E2948B15E00DFC71C /* Components */,
 				F6B8AF4D2944F23500DFC71C /* Assets.xcassets */,
 				F6B8AF4F2944F23500DFC71C /* Preview Content */,
-				F6B8AF602944F80A00DFC71C /* MovieModel.xcdatamodeld */,
 			);
 			path = MovieOS;
 			sourceTree = "<group>";
@@ -117,7 +121,8 @@
 		F6B8AF6D294635B500DFC71C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F6B8AF4B2944F23200DFC71C /* ContentView.swift */,
+				F6B8AF4B2944F23200DFC71C /* HomeView.swift */,
+				F6B8AF7C2947B59C00DFC71C /* MovieDetailScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,6 +134,15 @@
 				F6B8AF732946410F00DFC71C /* Movie.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F6B8AF7E2948B15E00DFC71C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8AF812948B5CB00DFC71C /* XMarkImage.swift */,
+				F6B8AF7829477CAF00DFC71C /* ImageLoader.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,14 +215,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6B8AF622944F80A00DFC71C /* MovieModel.xcdatamodeld in Sources */,
 				F6B8AF6A294500E200DFC71C /* MovieEndpoint.swift in Sources */,
-				F6B8AF4C2944F23200DFC71C /* ContentView.swift in Sources */,
+				F6B8AF7929477CAF00DFC71C /* ImageLoader.swift in Sources */,
+				F6B8AF4C2944F23200DFC71C /* HomeView.swift in Sources */,
 				F6B8AF652944F98200DFC71C /* Log.swift in Sources */,
 				F6B8AF742946410F00DFC71C /* Movie.swift in Sources */,
 				F6B8AF5F2944F7DB00DFC71C /* Manager.swift in Sources */,
+				F6B8AF822948B5CB00DFC71C /* XMarkImage.swift in Sources */,
 				F6B8AF722946361D00DFC71C /* Movies.swift in Sources */,
 				F6B8AF682945007600DFC71C /* Endpoint.swift in Sources */,
+				F6B8AF7D2947B59C00DFC71C /* MovieDetailScreen.swift in Sources */,
 				F6B8AF6C294631DC00DFC71C /* NetworkEngine.swift in Sources */,
 				F6B8AF4A2944F23200DFC71C /* MovieOSApp.swift in Sources */,
 			);
@@ -411,19 +427,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F6B8AF602944F80A00DFC71C /* MovieModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F6B8AF612944F80A00DFC71C /* MovieModel.xcdatamodel */,
-			);
-			currentVersion = F6B8AF612944F80A00DFC71C /* MovieModel.xcdatamodel */;
-			path = MovieModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F6B8AF3E2944F23200DFC71C /* Project object */;
 }
